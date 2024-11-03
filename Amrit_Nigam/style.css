@@ -1,0 +1,187 @@
+:root {
+    --win98-grey: #c0c0c0;
+    --win98-border-light: #ffffff;
+    --win98-border-dark: #808080;
+    --win98-blue: #000080;
+    --win98-green: #008000;
+}
+
+/* Base Styles */
+body {
+    background-color: #008080;
+    font-family: "MS Sans Serif", Arial, sans-serif;
+    padding: 20px;
+    color: black;
+    margin: 0;
+}
+
+/* Window Styles */
+.window {
+    background-color: var(--win98-grey);
+    border: 2px solid #000;
+    border-right-color: var(--win98-border-dark);
+    border-bottom-color: var(--win98-border-dark);
+    border-left-color: var(--win98-border-light);
+    border-top-color: var(--win98-border-light);
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title-bar {
+    background-color: var(--win98-blue);
+    color: white;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-controls {
+    display: flex;
+    gap: 2px;
+}
+
+.title-bar-button {
+    background-color: var(--win98-grey);
+    border: 1px solid;
+    border-top-color: var(--win98-border-light);
+    border-left-color: var(--win98-border-light);
+    border-right-color: var(--win98-border-dark);
+    border-bottom-color: var(--win98-border-dark);
+    width: 16px;
+    height: 14px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.window-content {
+    padding: 10px;
+}
+
+
+/* Taskbar Styles */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: var(--win98-grey);
+    border-top: 2px solid var(--win98-border-light);
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.start-button {
+    background-color: var(--win98-grey);
+    border: 2px solid;
+    border-top-color: var(--win98-border-light);
+    border-left-color: var(--win98-border-light);
+    border-right-color: var(--win98-border-dark);
+    border-bottom-color: var(--win98-border-dark);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Desktop Icons */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+.desktop-icon img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+/* Hover Effects */
+.title-bar-button:hover,
+.start-button:hover,
+.control-btn:hover {
+    filter: brightness(0.95);
+}
+
+.title-bar-button:active,
+.start-button:active,
+.control-btn:active {
+    border-top-color: var(--win98-border-dark);
+    border-left-color: var(--win98-border-dark);
+    border-right-color: var(--win98-border-light);
+    border-bottom-color: var(--win98-border-light);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .volume-slider {
+        width: 60px;
+    }
+    
+    .control-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+#preloader {
+    background: #008080 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+#winlogo{
+    width: 500px;
+    height: 300px;
+    animation: shine 0.85s;
+}
+
+iframe {
+    border: 2px solid #c0c0c0;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    background-color: #c0c0c0;
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #808080;
+    font-family: 'MS Sans Serif', sans-serif;
+    padding: 2px;
+  }
+  
+  /* Add this before the iframe to create a title bar */
+  .win98-title-bar {
+    background-color: #000080;
+    color: white;
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 12px;
+    text-align: left;
+  }

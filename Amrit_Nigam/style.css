@@ -28,39 +28,71 @@ body {
 }
 
 .title-bar {
-    background-color: var(--win98-blue);
-    color: white;
-    padding: 3px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000080;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+}
+
+.title-bar-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .title-bar-controls {
     display: flex;
-    gap: 2px;
+    gap: 5px;
 }
 
 .title-bar-button {
-    background-color: var(--win98-grey);
-    border: 1px solid;
-    border-top-color: var(--win98-border-light);
-    border-left-color: var(--win98-border-light);
-    border-right-color: var(--win98-border-dark);
-    border-bottom-color: var(--win98-border-dark);
-    width: 16px;
-    height: 14px;
-    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: #c0c0c0;
+    border: 1px solid #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
+}
+
+.title-bar-button:hover {
+    background-color: #808080;
 }
 
 .window-content {
     padding: 10px;
 }
 
+.window-content.links {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.window-content.links li {
+    display: flex;
+    align-items: center;
+}
+
+.window-content.links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.window-content.links a:hover {
+    color: #0073e6;
+}
 
 /* Taskbar Styles */
 .taskbar {
@@ -68,12 +100,12 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 30px;
+    height: 40px;
     background-color: var(--win98-grey);
     border-top: 2px solid var(--win98-border-light);
     display: flex;
     align-items: center;
-    padding: 2px;
+    padding: 0 10px;
 }
 
 .start-button {
@@ -185,3 +217,32 @@ iframe {
     font-size: 12px;
     text-align: left;
   }
+.stuff{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.links{
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px; /* Adjust the gap between boxes */
+}
+
+.window {
+    flex: 1;
+    margin: 10px;
+    background-color: #c0c0c0; /* Example background color */
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

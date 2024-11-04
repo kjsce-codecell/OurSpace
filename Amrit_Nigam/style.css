@@ -254,6 +254,7 @@ iframe {
     padding: 10px;
     border: 2px solid #000;
     box-shadow: inset 1px 1px 0px 1px var(--win98-border-light), inset -1px -1px 0px 1px var(--win98-border-dark);
+    flex-wrap: wrap;
 }
 
 .tech-skills, .creative-skills {
@@ -277,4 +278,11 @@ li {
     font-size: 0.9em;
     margin-bottom: 3px;
     color: black;
+}
+
+@media (max-width: 600px) {
+    .tech-skills, .creative-skills {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

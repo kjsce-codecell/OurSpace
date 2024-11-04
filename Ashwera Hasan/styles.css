@@ -1,0 +1,45 @@
+.intro {
+    border-radius: 10px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding: 50px;  
+    margin: 20px;
+  }  
+  .intro h1
+  {
+    letter-spacing: 5px; 
+    font-size: 50px;
+  }
+  .intro p
+  {
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  body {
+    font-family: 'Playfair Display', serif;
+  }
+  .background-video {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+  }
+  .displayimage
+  {
+    height: 25%;
+    width: 25%;
+    float: right;
+  }
+  .hobby
+  {
+    color: white;
+    text-align: center;
+  }
+  .breaking
+  {
+    margin-bottom: 100px; 
+    background-color: black;
+  }

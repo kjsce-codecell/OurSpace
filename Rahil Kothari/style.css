@@ -70,3 +70,62 @@
   .button:hover {
     background-color: #A78BFA; /* violet-500 */
   }
+
+  .footer {
+    position: absolute;
+    z-index: 10;
+    border-top: 1px solid #4C1D95; /* violet-900 */
+    bottom: 0;
+    width: 100%;
+    margin-left: -5%;
+    margin-right: -5%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 2rem 1rem;
+    min-width: 100%;
+    
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .footer-text {
+    color: #D8B4FE; /* violet-300 */
+    font-size: 1.25rem;
+    flex-grow: 1;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .social-link {
+    color: #D8B4FE; /* violet-300 */
+    transition: color 0.3s ease;
+    font-size: 0; /* Hides text space while showing icon */
+  }
+  
+  .social-link:hover {
+    color: #C4B5FD; /* violet-400 */
+  }
+  
+  .icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    display: inline-block;
+  }
+  
+  /* Example placeholder for icons; you would replace these with actual icon images or font-based icons like FontAwesome */
+  .github-icon::before, .linkedin-icon::before, .mail-icon::before {
+    content: "🔗"; /* Replace with actual icon if using SVGs or icon fonts */
+    font-size: 1.5rem;
+  }
+  

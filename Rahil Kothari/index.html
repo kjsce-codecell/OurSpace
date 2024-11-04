@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello Welcome to Rahil's homepage</h1>
-    <a href="https://github.com/RahilKothari9"><h2>My Github</h2></a>
+    <div class="full">
+        <h1>Rahil Kothari</h1>
+        <div class="typewriter"><h3 >tech head.</h3></div>
+        <div class="button-container">
+            <button class="button contact-button" onclick="window.location.href='https:/www.linkedin.com/in/rahilk9'">
+
+              Contact Me
+            </button>
+            <button class="button projects-button" onclick="window.location.href='https:/github.com/RahilKothari9'">View Projects</button>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-content">
+                <p class="footer-text">© 2024 Rahil Kothari</p>
+                <div class="social-links">
+                    <a href="https://github.com/RahilKothari9" class="social-link">
+                      <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png" alt="GitHub" class="icon">
+                    </a>
+                    <a href="https://linkedin.com/in/krahil9" class="social-link">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon">
+                    </a>
+                    <a href="https://codeforces.com/profile/kotharirahil9" class="social-link">
+                      <img src="https://art.npanuhin.me/SVG/Codeforces/Codeforces.colored.svg" alt="Codeforces" class="icon">
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </footer>
+          
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+    el: ".full",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x6a3fff
+    })
+    </script>
 </body>
 </html>

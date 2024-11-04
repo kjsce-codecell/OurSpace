@@ -43,3 +43,30 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #A78BFA; /* violet-500 */
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button .mail-icon {
+    margin-right: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #A78BFA; /* violet-500 */
+  }

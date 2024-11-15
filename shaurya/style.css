@@ -22,3 +22,10 @@
 a {
     padding: 8px;
 }
+#socials a img {
+  transition: transform 0.3s ease;
+}
+
+#socials a:hover img {
+  transform: scale(1.2);
+}

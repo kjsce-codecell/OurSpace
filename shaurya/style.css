@@ -1,31 +1,126 @@
 @font-face {
-    font-family: "Geist";
+    font-family: "HUMANE";
     src:
-      url("Geist/Geist-SemiBold.otf") format("opentype"),
-      url("Geist/Geist-Regular.otf") format("opentype");
+      url("HUMANE Typeface/Bosch-Display.otf"),
+      format(OpenType);
     font-weight: normal;
     font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Geist";
+    src:
+      url("Geist/Geist-Bold.otf"),
+      format(OpenType);
   }
 
   body {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(75deg, #740000, #000000);
-    color: white;
-    font-family: "Geist", sans-serif;
+    background-color: black;
+    color:white;
+    font-family: "HUMANE";
     align-items: center;
     justify-content: center;
     min-height: 100vh;
    
 }
 
-a {
-    padding: 8px;
+#name {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    mix-blend-mode: screen;
+
+    
+    }
+    
+    #name:hover {
+    transform: scale(0.8);
+    }
+
+#intro {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    color: rgb(251, 248, 248)
 }
+
+#intro:hover {
+    transform: scale(0.8);
+}
+
 #socials a img {
   transition: transform 0.3s ease;
+  padding: 8px 10px;
 }
 
 #socials a:hover img {
   transform: scale(1.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
 }
+#socials {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  background-color: #00000052;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  }
+button {
+  background-color: #00000052;
+ border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  font-size: 1.2rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  font-family: "Geist";
+  }
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7); 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  }
+#button1 {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+#button2 {
+  position: fixed;
+  right: 10rem;
+  bottom: 10px;
+}
+
+  body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+#video {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+}
+#myVideo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter :blur(10px);
+}
+
+
+
